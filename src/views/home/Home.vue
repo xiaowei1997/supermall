@@ -3,43 +3,175 @@
     <nav-bar class="home-nav">
       <div slot="center">购物街</div>
     </nav-bar>
-    <HomeSwiper :banners="banners" />
-    <recommend-view :recommends="recommends" />
-    <FeatureView />
-    <tab-control class="tab-control" :titles="['流行','爆款','精选']" @tabClick="tabClick"/>
-    <goods-list :goods="showGoods" />
-    <ul>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-      <li>ssss</li>
-    </ul>
+    <scroll class="content"
+            ref="scroll"
+            :probe-type="3"
+            @scroll="contentScroll"
+            :pull-up-load="true"
+            @pullingUp="loadMore">
+      <HomeSwiper :banners="banners" />
+      <recommend-view :recommends="recommends" />
+      <FeatureView />
+      <tab-control class="tab-control"
+                   :titles="['流行','爆款','精选']"
+                   @tabClick="tabClick"/>
+      <goods-list :goods="showGoods" />
+      <ul>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+        <li>sddsfsdf</li>
+      </ul>
+    </scroll>
+
+    <back-top @click.native="backClick" v-show="isShowBackTop"/>
   </div>
 </template>
 
@@ -52,6 +184,8 @@ import FeatureView from "./childComps/FeatureView";
 import TabControl from "components/content/tabControl/TabControl"
 import NavBar from "components/common/navbar/NavBar";
 import GoodsList from "../../components/content/goods/GoodsList";
+import Scroll from "components/common/scroll/Scroll";
+import BackTop from "../../components/content/backTop/BackTop";
 
 import {getHomeMultidata, getHomeGoods} from "../../network/home";
 
@@ -64,7 +198,9 @@ import {getHomeMultidata, getHomeGoods} from "../../network/home";
       HomeSwiper,
       RecommendView,
       FeatureView,
-      TabControl
+      TabControl,
+      Scroll,
+      BackTop
     },
     data() {
       return {
@@ -76,6 +212,7 @@ import {getHomeMultidata, getHomeGoods} from "../../network/home";
           'sell': {page: 0, list: []},
         },
         currentType: 'pop',
+        isShowBackTop: false
 
       }
     },
@@ -110,6 +247,8 @@ import {getHomeMultidata, getHomeGoods} from "../../network/home";
           this.goods[type].list.push
           (...res.data.list)
           this.goods[type].page += 1
+
+          this.$refs.scroll.finishPullUp()
         })
       },
 
@@ -129,6 +268,17 @@ import {getHomeMultidata, getHomeGoods} from "../../network/home";
                 break
 
         }
+      },
+      backClick() {
+        this.$refs.scroll.scrollTo(0,0)
+      },
+      contentScroll(position) {
+        this.isShowBackTop = (-position.y) > 800
+      },
+      loadMore() {
+        this.getHomeGoods(this.currentType)
+
+        this.$refs.scroll.refresh()
       }
     }
 
